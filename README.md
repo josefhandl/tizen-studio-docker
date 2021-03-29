@@ -7,10 +7,11 @@ This project creates a Docker image with Tizen Studio based on Ubuntu 16.04 with
 ## Usage 
 
 1. Clone this project
-2. Run `./install.sh`
+2. Run `./build.sh` to build the image
+3. Run `./install.sh`
 The script will create a "**tizen-studio-home**" directory in your home path
-3. Run `./package-manager.sh` to install required packages
-4. Run `./run.sh` to run Tizen Studio
+4. Run `./package-manager.sh` to install required packages
+5. Run `./run.sh` to run Tizen Studio
 
 Please do not run the Package Manager using Tizen Studio! Use only `./package-manager.sh` script and only if the studio is closed (no container from this project is running). The Manager process is Studio's descendant and the Studio need to be closed while installing packages. If you close the Studio, the docker container would be closed.
 
